@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
@@ -35,9 +36,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --font-sans: DM Sans, ui-sans-serif, sans-serif, system-ui;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Geist Mono, ui-monospace, monospace;
+  --font-mono: "DM Mono", ui-monospace, monospace;
   --radius: 1rem;
   --shadow-x: 0;
   --shadow-y: 1px;
@@ -59,6 +60,7 @@
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+  --shadow-brand: inset 0 0 0 0.5px color;
 }
 
 .dark {
@@ -169,6 +171,7 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+  --shadow-inner-border: inset 0 0 0 0.5px var(--color-neutral-100);
 }
 
 @layer base {
